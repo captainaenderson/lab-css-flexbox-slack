@@ -177,6 +177,33 @@ h1 {
     padding: 20px 18px;
 }
 
+/* Bring your team together */
+
+#team {
+    display: flex;
+    flex-direction: column;
+    background-color: #F3EAE2;
+
+}
+
+.img-together {
+    width: 100%;
+    
+}
+
+.together {
+    background-color: #F3EAE2;
+    margin: 10px 20px;
+}
+
+.together h2 {
+    font-size: 30px;
+}
+
+.together a {
+    color: #2E71A6;
+}
+
 
 @media (max-width: 768px) {
     /* navigation */
@@ -213,13 +240,38 @@ h1 {
         margin-bottom: 120px;
     }
 
+    .header p {
+        text-align: left;
+        margin: 20px 45px;
+    }
+
+    #login-buttons {
+        margin: 0 30px;
+    }
+
+
     /* Logos */
 
     .logos > img {
         height: 35px;
     }
     
-}
+    /* Bring your team together */
+
+    .img-together {
+        display: none;
+    }
+
+    .img-replace {
+        content: url(/starter_code/images/connectedness.png);
+        margin-right: 120px;
+    }
+
+    .together {
+        margin: 0 150px 50px;150px
+    }
+
+}  
 
 @media (min-width: 1024px) and (max-width: 1440px) {
     /* navigation */
@@ -241,4 +293,45 @@ h1 {
         margin-bottom: 120px;
     }
 
-}
+    /* header */
+
+    .header p {
+        text-align: left;
+        margin: 20px 45px;
+    }
+
+    #login-buttons {
+        margin: 0 30px;
+    }
+ 
+
+ /* Bring your team together */
+    .img-together {
+        display: none;
+    }
+
+    .img-replace {
+        content: url(/starter_code/images/connectedness.png);
+        width: 45%;
+        margin-right: 150px;
+    } 
+
+    #team {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .together p {
+        margin-right: 50px;
+    }
+
+    .together h2 {
+        font-size: 40px;
+        margin-right: 50px;
+        margin-top: 0;
+        padding: 0;
+    }
+
+
+
+}  
