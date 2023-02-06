@@ -148,12 +148,33 @@ h1 {
 
 #logos {
     background-color: #F3EAE2;
+    padding-bottom: 50px;
     
 }
 
 #logos p {
-    color: #4285F4;
-    margin-top: 50px;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 50px 0 20px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: contain;
+    justify-content: space-between;
+    
+    
+}
+
+.logos > img {
+    height: 40px;
+    padding: 20px 18px;
 }
 
 
@@ -192,6 +213,11 @@ h1 {
         margin-bottom: 120px;
     }
 
+    /* Logos */
+
+    .logos > img {
+        height: 35px;
+    }
     
 }
 
